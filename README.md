@@ -13,6 +13,28 @@ Kemudian, di bawah ini terdapat tabel untuk memperjelas rute dari setiap subnet,
 ![image](https://github.com/wamalias/Jarkom-Modul-4-E24-2023/assets/111508713/af4a4582-9198-4de8-9798-582441b24dcf)
 
 ## CIDR
+Pada teknik perhitungan CIDR(Classless Inter Domain Routing), hal pertama yang perlu dilakukan adalah melakukan penggabungan subnet untuk beberapa iterasi dimulai dari subnet yang paling jauh dari internet. Berikut hasil penggabungan subnet dari kelompok kami: </br>
+Berdasarkan proses penggabungan tersebut, kami mendapat netmask `/14` untuk hasil penggabungan akhir. Langkah selanjutnya yang perlu dilakukan adalah membuat tree pembagian IP berdasarkan hasil penggabungan sebelumnya. Berikut tree CIDR dari kelompok kami: </br>
+![cidrtree](https://github.com/wamalias/Jarkom-Modul-4-E24-2023/blob/main/CIDR/cidrtree.jpg)
+
+Berdasarkan tree diatas, berikut pembagian IP untuk masing-masing subnet:
+
+Langkah selanjutnya adalah memasukkan IP yang sudah didapatkan sebelumnya ke masing-masing subnet pada CPT dan melakukan routing pada masing-masing router. </br>
+
+Setelah memasukkan IP dan melakukan routing, langkah selanjutnya yaitu melakukan beberapa uji coba sebagai berikut:
+- Router menuju Router </br>
+![routertorouter](https://github.com/wamalias/Jarkom-Modul-4-E24-2023/blob/main/CIDR/routertorouter.jpg)
+- Router menuju Client </br>
+![routertoclient](https://github.com/wamalias/Jarkom-Modul-4-E24-2023/blob/main/CIDR/routertoclient.jpg)
+- Router menuju Server </br>
+![routertoserver](https://github.com/wamalias/Jarkom-Modul-4-E24-2023/blob/main/CIDR/routertoserver.jpg)
+- Server menuju Server </br>
+![servertoserver](https://github.com/wamalias/Jarkom-Modul-4-E24-2023/blob/main/CIDR/servertoserver.jpg)
+- Client menuju Client </br>
+![clienttoclient](https://github.com/wamalias/Jarkom-Modul-4-E24-2023/blob/main/CIDR/clienttoclient.jpg)
+- Client menuju Server </br>
+![clienttoserver](https://github.com/wamalias/Jarkom-Modul-4-E24-2023/blob/main/CIDR/clienttoserver.jpg)
+
 
 ## VLSM
 Pada metode VLSM, tidak ada penggabungan subnet seperti metode CIDR. Pada metode ini, tree yang dibuat akan dimulai dari netmask total seperti pada tabel pembagian subnet. Kemudian, rentang ip yang ditampung oleh netmask awal ini akan dibagi 2 sama besar untuk membentuk node dengan netmask yang lebih kecil. </br>
