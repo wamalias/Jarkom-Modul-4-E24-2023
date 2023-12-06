@@ -14,10 +14,22 @@ Kemudian, di bawah ini terdapat tabel untuk memperjelas rute dari setiap subnet,
 
 ## CIDR
 Pada teknik perhitungan CIDR(Classless Inter Domain Routing), hal pertama yang perlu dilakukan adalah melakukan penggabungan subnet untuk beberapa iterasi dimulai dari subnet yang paling jauh dari internet. Berikut hasil penggabungan subnet dari kelompok kami: </br>
+![penggabungan1](https://github.com/wamalias/Jarkom-Modul-4-E24-2023/blob/main/CIDR/penggabungan1.jpg)
+![penggabungan2](https://github.com/wamalias/Jarkom-Modul-4-E24-2023/blob/main/CIDR/penggabungan2.jpg)
+![penggabungan3](https://github.com/wamalias/Jarkom-Modul-4-E24-2023/blob/main/CIDR/penggabungan3.jpg)
+![penggabungan4](https://github.com/wamalias/Jarkom-Modul-4-E24-2023/blob/main/CIDR/penggabungan4.jpg)
+![penggabungan5](https://github.com/wamalias/Jarkom-Modul-4-E24-2023/blob/main/CIDR/penggabungan5.jpg)
+![penggabungan6](https://github.com/wamalias/Jarkom-Modul-4-E24-2023/blob/main/CIDR/penggabungan6.jpg)
+![penggabungan7](https://github.com/wamalias/Jarkom-Modul-4-E24-2023/blob/main/CIDR/penggabungan7.jpg)
+![penggabungan8](https://github.com/wamalias/Jarkom-Modul-4-E24-2023/blob/main/CIDR/penggabungan8.jpg)
+![penggabungan9](https://github.com/wamalias/Jarkom-Modul-4-E24-2023/blob/main/CIDR/penggabungan9.jpg)
+![penggabungan10](https://github.com/wamalias/Jarkom-Modul-4-E24-2023/blob/main/CIDR/penggabungan10.jpg)
+![penggabungan11](https://github.com/wamalias/Jarkom-Modul-4-E24-2023/blob/main/CIDR/penggabungan11.jpg)
 Berdasarkan proses penggabungan tersebut, kami mendapat netmask `/14` untuk hasil penggabungan akhir. Langkah selanjutnya yang perlu dilakukan adalah membuat tree pembagian IP berdasarkan hasil penggabungan sebelumnya. Berikut tree CIDR dari kelompok kami: </br>
 ![cidrtree](https://github.com/wamalias/Jarkom-Modul-4-E24-2023/blob/main/CIDR/cidrtree.jpg)
 
 Berdasarkan tree diatas, berikut pembagian IP untuk masing-masing subnet:
+![pembagianip](https://github.com/wamalias/Jarkom-Modul-4-E24-2023/blob/main/CIDR/pembagianip.jpg)
 
 Langkah selanjutnya adalah memasukkan IP yang sudah didapatkan sebelumnya ke masing-masing subnet pada CPT dan melakukan routing pada masing-masing router. </br>
 
